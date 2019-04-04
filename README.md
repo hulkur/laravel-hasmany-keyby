@@ -37,7 +37,7 @@ Ex: users/groups grid where grid fields are some value in pivot record and not a
 ```php
 @foreach($users as $user)
   @foreach($groups as $group)
-    {{optional($user->accesslevels[$groupId])->level}}
+    {{optional($user->accesslevels[$group->id])->level}}
   @endforeach
 @endforeach
 ```

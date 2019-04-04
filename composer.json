@@ -1,5 +1,5 @@
 {
-    "name": "hulkur/hasmany-keyby",
+    "name": "hulkur/laravel-hasmany-keyby",
     "description": "Add possibility to have related models in many-to-many relationship attached to the parent model by defined key values.",
     "homepage": "https://github.com/hulkur/hasmany-keyby",
     "require": {

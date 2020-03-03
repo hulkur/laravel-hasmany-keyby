@@ -2,19 +2,10 @@
 
 namespace Hulkur\HasManyKeyBy\Test;
 
-use Hulkur\HasManyKeyBy\ServiceProvider;
 use Illuminate\Support\Collection;
-use PHPUnit\Framework\TestCase;
 
 class CollectionTest extends TestCase
 {
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        (new ServiceProvider(null))->register();
-    }
-
     public function testMapToDictionaryWithKeyByAsString()
     {
         $data = new Collection([

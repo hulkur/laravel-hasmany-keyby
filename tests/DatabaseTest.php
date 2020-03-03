@@ -3,7 +3,6 @@
 namespace Hulkur\HasManyKeyBy\Test;
 
 use Hulkur\HasManyKeyBy\HasManyKeyBy;
-use Hulkur\HasManyKeyBy\ServiceProvider;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -11,13 +10,6 @@ use Mockery as m;
 
 class DatabaseTest extends TestCase
 {
-//    public function setUp(): void
-//    {
-//        parent::setUp();
-//
-//        (new ServiceProvider(null))->register();
-//    }
-
     public function testModelsAreProperlyMatchedToParentsWithKeyByAsString()
     {
         $relation = $this->getRelation()

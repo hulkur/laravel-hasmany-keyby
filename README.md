@@ -1,8 +1,8 @@
 # Extend Laravel HasMany relationship with KeyBy method
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/hulkur/laravel-hasmany-keyby.svg?style=flat-square)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
-[![Total Downloads](https://img.shields.io/packagist/dt/hulkur/laravel-hasmany-keyby.svg?style=flat-square)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
-
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/hulkur/laravel-hasmany-keyby.svg)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/hulkur/laravel-hasmany-keyby/Run%20tests?label=Tests)
+[![Total Downloads](https://img.shields.io/packagist/dt/hulkur/laravel-hasmany-keyby.svg)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
 
 Adds possibility to have related models in many-to-many relationship attached to the parent model by defined key values.
 Usually it would be related model `id`.

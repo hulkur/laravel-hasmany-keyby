@@ -15,7 +15,7 @@ class HasManyKeyBy extends HasMany
      * @param string|callable $keyBy
      * @return $this
      */
-    public function keyBy($keyBy)
+    public function keyBy($keyBy): self
     {
         $this->keyBy = $keyBy;
 

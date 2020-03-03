@@ -23,7 +23,8 @@ class ServiceProvider extends BaseServiceProvider
                     $dictionary[$key] = [];
                 }
 
-                if ($keyBy) {
+                if (!is_null($keyBy)) {
+                    /** @var Collection $this */
                     $innerKey = $this->useAsCallable($keyBy) ? $keyBy($item) : data_get($item, $keyBy);
                     $dictionary[$key][$innerKey] = $value;
                 } else {

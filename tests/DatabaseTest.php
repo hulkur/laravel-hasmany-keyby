@@ -8,16 +8,15 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Mockery as m;
-use PHPUnit\Framework\TestCase;
 
 class DatabaseTest extends TestCase
 {
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        (new ServiceProvider(null))->register();
-    }
+//    public function setUp(): void
+//    {
+//        parent::setUp();
+//
+//        (new ServiceProvider(null))->register();
+//    }
 
     public function testModelsAreProperlyMatchedToParentsWithKeyByAsString()
     {

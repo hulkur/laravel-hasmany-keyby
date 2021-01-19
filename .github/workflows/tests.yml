@@ -5,21 +5,20 @@ on:
 
 jobs:
     php-tests:
-        runs-on: ${{ matrix.os }}
+        runs-on: ubuntu-latest
 
         strategy:
             matrix:
                 php: [8.0, 7.4]
                 laravel: [8.*, 7.*]
                 dependency-version: [prefer-stable]
-                os: [ubuntu-latest, windows-latest]
                 include:
                     - laravel: 8.*
                       testbench: 6.*
                     - laravel: 7.*
                       testbench: 5.*
 
-        name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
+        name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
         steps:
             - name: Checkout code

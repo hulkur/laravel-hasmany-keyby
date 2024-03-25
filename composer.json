@@ -13,7 +13,7 @@
         "doctrine/persistence": "^2.0",
         "mockery/mockery": "^1.5",
         "nunomaduro/collision": "^8.1",
-        "orchestra/testbench": "^9.x-dev"
+        "orchestra/testbench": "^9.0"
     },
     "authors": [
         {
@@ -41,7 +41,6 @@
     "scripts": {
         "test": "./vendor/bin/testbench package:test --parallel"
     },
-    "minimum-stability": "dev",
     "config": {
         "sort-packages": true
     }

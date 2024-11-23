@@ -12,6 +12,7 @@ class ServiceProvider extends BaseServiceProvider
         Collection::macro('mapToDictionaryWithKey', function (callable $callback, $keyBy = null) {
             $dictionary = [];
 
+            /** @var Collection $this */
             foreach ($this->items as $key => $item) {
                 $pair = $callback($item, $key);
 
@@ -24,7 +25,6 @@ class ServiceProvider extends BaseServiceProvider
                 }
 
                 if (!is_null($keyBy)) {
-                    /** @var Collection $this */
                     $innerKey = $this->useAsCallable($keyBy) ? $keyBy($item) : data_get($item, $keyBy);
                     $dictionary[$key][$innerKey] = $value;
                 } else {

@@ -5,6 +5,12 @@ namespace Hulkur\HasManyKeyBy;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
+/**
+ * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+ * @template TDeclaringModel of \Illuminate\Database\Eloquent\Model
+ *
+ * @extends \Illuminate\Database\Eloquent\Relations\HasMany<TRelatedModel, TDeclaringModel>
+ */
 class HasManyKeyBy extends HasMany
 {
     protected $keyBy = null;
@@ -25,8 +31,8 @@ class HasManyKeyBy extends HasMany
     /**
      * Build model dictionary keyed by the relation's foreign key.
      *
-     * @param Collection $results
-     * @return array
+     * @param  \Illuminate\Database\Eloquent\Collection<int, TRelatedModel>  $results
+     * @return array<array<int, TRelatedModel>>
      */
     protected function buildDictionary(Collection $results)
     {

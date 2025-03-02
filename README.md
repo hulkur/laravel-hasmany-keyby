@@ -35,14 +35,18 @@ result:
 $user->groups = [$group->id => $group];
 ```
 
-This is specially useful in case there is a need to manipulate pivot records in mass.
-Ex: users/groups grid where grid fields are some value in pivot record and not all pivot records exist
+## Some real life use cases
+
+1. When you need to target order items by product id to apply order discounts.
+   - Ex: discount for specific product on order total/shipping method etc 
+ 
+2. When you need to manipulate pivot records in mass.
+   - Ex: users/groups grid where grid fields are some value in pivot record and not all pivot records exist
 
 ```php
 @foreach($users as $user)
   @foreach($groups as $group)
-    {{optional($user->accesslevels[$group->id])->level}}
+    {{$user->accesslevels[$group->id]?->level}}
   @endforeach
 @endforeach
 ```
-

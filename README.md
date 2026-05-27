@@ -1,6 +1,7 @@
 # Extend Laravel HasMany relationship with KeyBy method
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hulkur/laravel-hasmany-keyby.svg)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
+[![Laravel Compatibility](https://badge.laravel.cloud/badge/hulkur/laravel-hasmany-keyby)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/hulkur/laravel-hasmany-keyby/tests.yml?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/hulkur/laravel-hasmany-keyby.svg)](https://packagist.org/packages/hulkur/laravel-hasmany-keyby)
 
